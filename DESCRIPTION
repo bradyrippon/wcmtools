@@ -1,16 +1,25 @@
 Package: wcmtools
 Type: Package
-Title: What the Package Does (Title Case)
+Title: WCM Utilities and Functions for Biostatistics Analysis
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Authors@R: person(given = "Brady", family = "Rippon", email = "brr7014@med.cornell.edu", role = c("aut", "cre"))
+Description: A repository of tools curated among WCM Biostatistics staff, including custom
+    functions and a framework for WCM-styled R Markdown reports/presentations.
+URL: https://github.com/bradyrippon/wcmtools
+BugReports: https://github.com/bradyrippon/wcmtools/issues
+Depends: 
+    R (>= 4.1)
+Imports:
+    htmltools
+Suggests: 
+    testthat (>= 3.0.0),
+    rmarkdown,
+    knitr,
+    showtext,
+    sysfonts,
+    ragg
 License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
 LazyData: true
+RoxygenNote: 7.3.2

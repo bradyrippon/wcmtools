@@ -1,0 +1,14 @@
+---
+title: "WCM Report"
+author: ""
+date: today
+output: wcmtools::wcm_html
+---
+
+```{r setup, include=FALSE}
+
+wcmtools::wcm_setup()
+
+```
+
+

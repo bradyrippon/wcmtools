@@ -1,0 +1,6 @@
+
+name: report
+description: "Analysis report template for WCM Biostatistics."
+create_dir: true
+resources:
+  - resources

@@ -1,0 +1,111 @@
+
+/* Core variables (wcm_html() already sets --font-sans via a head <style>)
+   We add --font-mono here with a safe default. */
+:root {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* define WCM color accents */
+  --wcm-red: #B31B1B;
+  --wcm-orange: #CF4520;
+  --wcm-gold: #FFC72C;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: #111; /* keep body text readable; adjust if theme already sets it */
+}
+
+/* paragraphs */
+p {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+/* blockquotes */
+blockquote {
+  border-left: 4px solid var(--wcm-gold);
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+blockquote p,
+blockquote abbr, blockquote acronym,
+em abbr, em acronym,
+cite abbr, cite acronym {
+  font-family: var(--font-mono);
+  font-style: normal; /* match original choice */
+}
+
+/* tables */
+.table,
+thead, tbody, caption {
+  font-family: var(--font-sans);
+  color: black;
+}
+
+/* table of contents */
+#TOC {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* define logo at bottom of page */
+#wcmlogo img {
+  display: block;
+  margin: -15px auto -10px auto;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Bootstrap list group active color */
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  color: #fff;
+  background-color: var(--wcm-red);
+  border-color: var(--wcm-red);
+}
+
+/* Bootstrap nav tabs */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: black;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+.nav-tabs > li > a:hover {
+  background-color: var(--wcm-red);
+  color: #fff;
+}
+
+/* Rules & links */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid var(--wcm-orange);
+}
+
+/* Link styling:
+   - If you want monochrome/print-like, keep color: black;
+   - Otherwise consider using the brand red with underline for accessibility. */
+a {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: black;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
